@@ -1258,7 +1258,7 @@
           "class": "pvtUi"
         }).attr("cellpadding", 5);
         rendererControl = $("<td>");
-        renderer = $("<select>").addClass('pvtRenderer').appendTo(rendererControl).bind("change", function() {
+        renderer = $("<md-select>").addClass('pvtRenderer').appendTo(rendererControl).bind("change", function() {
           return refresh();
         });
         ref = opts.renderers;
@@ -1433,7 +1433,7 @@
           fn(attr);
         }
         tr1 = $("<tr>").appendTo(uiTable);
-        aggregator = $("<select>").addClass('pvtAggregator').bind("change", function() {
+        aggregator = $("<md-select>").addClass('pvtAggregator').bind("change", function() {
           return refresh();
         });
         ref1 = opts.aggregators;

@@ -699,7 +699,7 @@ callWithJQuery ($) ->
             #renderer control
             rendererControl = $("<td>")
 
-            renderer = $("<select>")
+            renderer = $("<md-select>")
                 .addClass('pvtRenderer')
                 .appendTo(rendererControl)
                 .bind "change", -> refresh() #capture reference
@@ -844,7 +844,7 @@ callWithJQuery ($) ->
 
             #aggregator menu and value area
 
-            aggregator = $("<select>").addClass('pvtAggregator')
+            aggregator = $("<md-select>").addClass('pvtAggregator')
                 .bind "change", -> refresh() #capture reference
             for own x of opts.aggregators
                 aggregator.append $("<option>").val(x).html(x)
