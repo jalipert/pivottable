@@ -704,7 +704,7 @@ callWithJQuery ($) ->
                 .appendTo(rendererControl)
                 .bind "change", -> refresh() #capture reference
             for own x of opts.renderers
-                $("<option>").val(x).html(x).appendTo(renderer)
+                $("<md-option>").val(x).html(x).appendTo(renderer)
 
 
             #axis list, including the double-click menu
@@ -847,7 +847,7 @@ callWithJQuery ($) ->
             aggregator = $("<md-select>").addClass('pvtAggregator')
                 .bind "change", -> refresh() #capture reference
             for own x of opts.aggregators
-                aggregator.append $("<option>").val(x).html(x)
+                aggregator.append $("<md-option>").val(x).html(x)
 
             ordering =
                 key_a_to_z:   {rowSymbol: "&varr;", colSymbol: "&harr;", next: "value_a_to_z"}

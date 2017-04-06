@@ -1264,7 +1264,7 @@
         ref = opts.renderers;
         for (x in ref) {
           if (!hasProp.call(ref, x)) continue;
-          $("<option>").val(x).html(x).appendTo(renderer);
+          $("<md-option>").val(x).html(x).appendTo(renderer);
         }
         unused = $("<td>").addClass('pvtAxisContainer pvtUnused');
         shownAttributes = (function() {
@@ -1439,7 +1439,7 @@
         ref1 = opts.aggregators;
         for (x in ref1) {
           if (!hasProp.call(ref1, x)) continue;
-          aggregator.append($("<option>").val(x).html(x));
+          aggregator.append($("<md-option>").val(x).html(x));
         }
         ordering = {
           key_a_to_z: {
